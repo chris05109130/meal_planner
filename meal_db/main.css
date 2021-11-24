@@ -1,0 +1,166 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.search {
+    background-color: black;
+    color: #fff;
+}
+
+.center {
+    text-align: Center;
+    padding: 2rem;
+}
+
+.search-form {
+    margin-bottom: 20px;
+}
+
+
+
+.search_item {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px 0px 0px 10px;
+    margin-right: -2px;
+    outline: none;
+    border: none;
+    text-indent: 10px;
+}
+
+::placeholder {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    background-color: #999;
+    color: #fff;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #222;
+    cursor: pointer;
+}
+
+.meals {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+}
+
+.meal {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px auto;
+    background-color: black;
+    color: #fff;
+}
+
+.meal img {
+    width: 400px;
+    height: 200px;
+    margin-left: 20px;
+}
+
+.meal h1 {
+    font-size: 2em;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.meal p {
+    margin: 20px;
+    padding: 10px;
+    line-height: 2;
+    text-align: center;
+    font-size: 1em;
+    letter-spacing: 2px;
+}
+
+.output p {
+    text-align: center;
+    margin: 30px;
+    font-size: 2em;
+}
+
+@media(min-width:320px) {
+    .meals {
+        grid-template-columns: 1fr;
+    }
+
+    .search {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 550px;
+    }
+
+    .output p {
+        width: 500px;
+    }
+
+    .meal {
+        width: 400px;
+    }
+
+    .meal img {
+        width: 300px;
+    }
+}
+
+@media(min-width:768px) {
+    .search {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+    }
+
+    .output p {
+        width: 600px;
+    }
+
+    .meal {
+        width: 500px;
+    }
+}
+
+@media(min-width:1024px) {
+    .meals {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .meal {
+        width: 550px;
+    }
+
+    .search {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .output p {
+        width: 100%;
+    }
+}
